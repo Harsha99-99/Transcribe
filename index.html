@@ -7,16 +7,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+  <header>
+    <div class="logo-header">
+        <img src="assets/logo.png" alt="Transcribe Logo" class="logo">
         <h1>Welcome to Transcribe</h1>
-    </header>
-    <main>
-        <form>
-            <label for="file-upload">Upload an audio file:</label>
-            <input type="file" id="file-upload" name="file-upload" accept="audio/*">
-            <button type="submit">Transcribe</button>
-        </form>
-    </main>
+    </div>
+</header>
+
+<main>
+  <div class="upload-container">
+      <label for="audio-upload" class="upload-label">Upload an audio file</label>
+      <input type="file" id="audio-upload" class="upload-input">
+      <button class="transcribe-button">Transcribe</button>
+  </div>
+</main>
+
+
     <footer>
         <p>&copy; 2025 Transcribe</p>
     </footer>

@@ -1,0 +1,154 @@
+/* Center the header content */
+header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Style the container for the logo and header */
+.logo-header {
+  display: flex;             /* Align items horizontally */
+  align-items: center;       /* Vertically center the logo and text */
+  justify-content: center;   /* Center the content in the header */
+  gap: 20px;                 /* Space between the logo and the text */
+}
+
+/* Style the logo */
+.logo {
+  width: 50px;              /* Set logo width */
+  height: auto;             /* Maintain aspect ratio */
+}
+
+/*If the page will be viewed on smaller devices, adding a media query to adjust font sizes and layout:*/
+@media (max-width: 768px) {
+  body {
+      font-size: 16px;
+  }
+  .logo {
+      width: 40px;
+  }
+  header h1 {
+      font-size: 2rem;
+  }
+}
+
+
+/* Global text settings */
+body {
+  font-family: 'Arial', sans-serif; /* Set a clean and modern font */
+  font-size: 1.2rem;                 /* Increase the base font size */
+  line-height: 1.6;                /* Improve readability by increasing line spacing */
+  color: #333;                     /* Set a dark gray color for the text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header text styling */
+header h1 {
+  font-size: 3rem;                 /* Make the header text larger */
+  color: #222;                     /* Slightly darker for emphasis */
+  margin: 0;                       /* Remove default margins */
+}
+
+/* Paragraph and other text */
+p, label {
+  font-size: 1.2rem;               /* Slightly increase font size for paragraphs and labels */
+}
+
+/* Button text */
+button {
+  font-size: 1rem;                 /* Make button text clear and readable */
+  padding: 10px 20px;              /* Add padding for better button size */
+  background-color: #007BFF;       /* Button background color */
+  color: #fff;                     /* Button text color */
+  border: none;
+  border-radius: 5px;              /* Slightly rounded corners */
+  cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3;       /* Darker shade on hover */
+}
+
+button:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* Main container styling */
+main {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  height: 100vh;           /* Occupy full viewport height */
+  background-color: #f9f9f9; /* Light background color for contrast */
+  margin: 0;
+}
+
+/* Upload container */
+.upload-container {
+  text-align: center;      /* Center all elements inside */
+  max-width: 90%;          /* Responsive width for smaller devices */
+  width: 400px;            /* Set a fixed width for consistency */
+}
+
+/* Label for "Upload an audio file" */
+.upload-label {
+    display: block;
+    font-size: 2rem;
+    color: #333;
+    text-align: center; /* Center the label text */
+    margin-top: -150px;
+    margin-bottom: 30px; /* Space BELOW "Upload an audio file" text */
+}
+
+/* Hide the default file input */
+.upload-input {
+  display: none; /* Hide the original file input */
+}
+
+/* Custom file input styling */
+.upload-label::after {
+  content: "Choose File";  /* Text for the custom button */
+  display: inline-block;
+  width: 100%;             /* Full width of the container */
+  padding: 20px;
+  background-color: #007BFF; /* Button color */
+  color: #fff;             /* Text color */
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;      /* Rounded corners */
+  cursor: pointer;
+  margin: 0px;
+}
+
+.upload-label:focus::after {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
+
+/* Custom button hover effect */
+.upload-label:hover::after {
+  background-color: #0056b3; /* Darker shade for hover */
+}
+
+/* Transcribe button */
+.transcribe-button {
+  display: block;
+  width: 110%;             /* Occupy full width of the container */
+  padding: 30px;           /* Increase padding for better clickability */
+  font-size: 2rem;       /* Slightly larger text */
+  background-color: #28a745; /* Green button color */
+  color: #fff;             /* Text color */
+  border: none;
+  border-radius: 5px;      /* Rounded corners */
+  margin-top: 20px;        /* Space above the button */
+  cursor: pointer;
+}
+
+/* Button hover effect */
+.transcribe-button:hover {
+  background-color: #218838; /* Darker shade for hover */
+}
